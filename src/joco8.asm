@@ -1,7 +1,7 @@
     CHIP 65C02
-    INCLUDE ..\include\macros.asm
-    INCLUDE ..\include\memory.asm
-    INCLUDE ..\include\lcd.asm
+    INCLUDE .\include\macros.asm
+    INCLUDE .\include\memory.asm
+    INCLUDE .\include\lcd.asm
 
 IO_IN           EQU $D030   ; PORTA
 IO_OUT          EQU $D031   ; PORTB
