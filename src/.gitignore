@@ -1,0 +1,6 @@
+*.asm
+*.bin
+*.lst
+*.map
+*.obj
+*.sym
