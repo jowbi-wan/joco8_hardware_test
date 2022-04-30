@@ -162,26 +162,26 @@ show_wait:
     PHA
     LDA #WAIT
     STA LCD_STATUS
-    pla
+    PLA
     RTS
 
 end_wait:
-    pha
+    PHA
     LDA #0
     STA LCD_STATUS
-    pla
+    PLA
     RTS
 
 ; Copy from R0 to R1, for a length of X
 COPY_MEM:
-    ldy #$0
+    LDY #$0
 COPY_LOOP
     LDA (R0),y
     STA (R1),y
-    dex
+    DEX
     beq EXIT_COPY
-    iny
-    jmp COPY_LOOP
+    INY
+    JMP COPY_LOOP
 EXIT_COPY:
     RTS
 
